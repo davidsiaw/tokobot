@@ -1,4 +1,5 @@
 require 'discordrb'
+require 'yaml'
 
 client_id = 311535055413575682
 
@@ -12,6 +13,10 @@ admins = {
 }
 
 
+def save_hash(c)
+  File.write("countdowns", c.to_yaml)
+end
+
 running = true
 
 Signal.trap("INT") do
@@ -21,6 +26,12 @@ end
 
 unconfirmed = {}
 countdowns = {}
+
+if File.exists?("countdowns")
+  puts "Resuming existing countdowns"
+  countdowns = YAML.load_file('countdowns')
+end
+
 
 bot.message(contains: "tokobot del") do |event|
   if admins.has_key?("#{event.user.id}")
@@ -32,6 +43,7 @@ bot.message(contains: "tokobot del") do |event|
         event.respond("USAGE: tokobot set <channel id> <{{time}}-name-pattern> <end-name> <year> <month> <day> <hour> <minute> <seconds>")
       else
         countdowns.delete("#{tokens[2]}")
+        save_hash(countdowns)
         event.respond("Channel removed from counting down.")
       end
     else
@@ -53,6 +65,7 @@ bot.message(contains: "tokobot ok") do |event|
       event.respond("Added to channel #{k}")
       countdowns[k] = v
     end
+    save_hash(countdowns)
     unconfirmed = {}
   end
 end
@@ -78,13 +91,12 @@ bot.message(contains: "tokobot set") do |event|
         if !chan
           event.respond("#{chan_id} channel not found")
         else
-          unconfirmed["#{chan_id}"] = { name: name_pat, target: Time.new(year,month,day,hour,minute,seconds), end_name: end_name }
+          unconfirmed["#{chan_id}"] = { name: name_pat, target: Time.new(year,month,day,hour,minute,seconds).to_i, end_name: end_name }
           event.respond("Will countdown on #{chan.name} in server #{chan.server.name}")
           event.respond("Will look like this: #{unconfirmed["#{chan_id}"][:name].sub("{{time}}", "5-mins")}")
           event.respond("Countdown will go until #{unconfirmed["#{chan_id}"][:target]}")
           event.respond("And then set channel name to '#{unconfirmed["#{chan_id}"][:end_name]}' at the end")
-          event.respond("To confirm say 'tokobot ok'")
-          event.respond("To cancel say 'tokobot cancel'")
+          event.respond("To confirm say 'tokobot ok' otherwise 'tokobot cancel'")
         end
       rescue => e
         event.respond("#{e.message}")
@@ -108,10 +120,10 @@ end
 
 loop do
   countdowns.each do |channel_id, info|
-    chan = bot.channel(channel_id)
-    if info[:target] > Time.now
+    chan = bot.channel("#{channel_id}")
+    if info[:target] > Time.now.to_i
 
-      difference = info[:target].to_i - Time.now.to_i
+      difference = info[:target] - Time.now.to_i
       prettystring = "#{difference}s"
 
       month = 60 * 60 * 24 * 30
