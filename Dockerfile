@@ -6,6 +6,7 @@ COPY Gemfile /srv/Gemfile
 COPY Gemfile.lock /srv/Gemfile.lock
 COPY main.rb /srv/main.rb
 COPY run.sh /srv/run.sh
+COPY gem.rc /etc/gemrc
 RUN sh /provision.sh
 
 WORKDIR /srv
