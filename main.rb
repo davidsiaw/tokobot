@@ -210,10 +210,13 @@ end
 loop do
   ensure_bot!(client_id)
 
-  now = Time.now
+  now = Time.now.getlocal('+09:00')
   @countdowns.each do |channel_id, info|
     begin
       chan = @bot.channel("#{channel_id}")
+
+      target_time = Time.at(info[:target]).getlocal('+09:00')
+
       if now.to_i < info[:target] && info[:start] < now.to_i
 
         difference = info[:target] - now.to_i
@@ -225,8 +228,8 @@ loop do
         hour = 60 * 60
         minute = 60
 
-        month_diff = (Time.at(info[:target]).year * 12 + Time.at(info[:target]).month) - (now.year * 12 + now.month)
-        day_diff = (Time.at(info[:target]).to_date - now.to_date).to_i
+        month_diff = (target_time.year * 12 + target_time.month) - (now.year * 12 + now.month)
+        day_diff = (target_time.to_date - now.to_date).to_i
 
         if month_diff > 1
           #months 
@@ -245,10 +248,10 @@ loop do
         mmo = info[:name].sub("{{time}}", "#{prettystring}")
 
         new_chan_name = info[:name].sub("{{time}}", "#{prettystring}")
-        if chan.name != new_chan_name || now.sec == 0
+        #if chan.name != new_chan_name || now.sec == 0
           puts "(#{chan.id}) #{difference} M#{month_diff} D#{day_diff} -> #{mmo}"
           chan.name = new_chan_name
-        end
+        #end
 
 
       elsif info[:target] < now.to_i && now.to_i < info[:target] + 10
