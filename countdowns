@@ -1,0 +1,973 @@
+---
+- - '143964260593172480'
+  - :name: hbd-kussun
+    :target: 1517497200
+    :end_name: seiyuu
+    :start: 1517410800
+    :countdown_name: hbd-kussun-2018
+- - '143964260593172480'
+  - :name: hbd-pile
+    :target: 1525273200
+    :end_name: seiyuu
+    :start: 1525186800
+    :countdown_name: hbd-pile-2018
+- - '143964260593172480'
+  - :name: hbd-shikaco
+    :target: 1526742000
+    :end_name: seiyuu
+    :start: 1526655600
+    :countdown_name: hbd-shikaco-2018
+- - '143964260593172480'
+  - :name: hbd-mimorin
+    :target: 1530198000
+    :end_name: seiyuu
+    :start: 1530111600
+    :countdown_name: hbd-mimorin-2018
+- - '143964260593172480'
+  - :name: hbd-nanjo
+    :target: 1531407600
+    :end_name: seiyuu
+    :start: 1531321200
+    :countdown_name: hbd-nanjo-2018
+- - '143964260593172480'
+  - :name: hbd-ucchi-and-ainya
+    :target: 1532358000
+    :end_name: seiyuu
+    :start: 1532271600
+    :countdown_name: hbd-ucchi-and-ainya-2018
+- - '143964260593172480'
+  - :name: hbd-rippi
+    :target: 1540566000
+    :end_name: seiyuu
+    :start: 1540479600
+    :countdown_name: hbd-rippi-2018
+- - '143964260593172480'
+  - :name: hbd-emitsun
+    :target: 1544454000
+    :end_name: seiyuu
+    :start: 1544367600
+    :countdown_name: hbd-emitsun-2018
+- - '143964260593172480'
+  - :name: hbd-soramaru
+    :target: 1545836400
+    :end_name: seiyuu
+    :start: 1545750000
+    :countdown_name: hbd-soramaru-2018
+- - '143964260593172480'
+  - :name: hbd-arisha
+    :target: 1517842800
+    :end_name: seiyuu
+    :start: 1517756400
+    :countdown_name: hbd-arisha-2018
+- - '143964260593172480'
+  - :name: hbd-anchan
+    :target: 1518015600
+    :end_name: seiyuu
+    :start: 1517929200
+    :countdown_name: hbd-anchan-2018
+- - '143964260593172480'
+  - :name: hbd-aiai
+    :target: 1519052400
+    :end_name: seiyuu
+    :start: 1518966000
+    :countdown_name: hbd-aiai-2018
+- - '143964260593172480'
+  - :name: hbd-rikyako
+    :target: 1533740400
+    :end_name: seiyuu
+    :start: 1533654000
+    :countdown_name: hbd-rikyako-2018
+- - '143964260593172480'
+  - :name: hbd-shuka
+    :target: 1534431600
+    :end_name: seiyuu
+    :start: 1534345200
+    :countdown_name: hbd-shuka-2018
+- - '143964260593172480'
+  - :name: hbd-king
+    :target: 1537887600
+    :end_name: seiyuu
+    :start: 1537801200
+    :countdown_name: hbd-king-2018
+- - '143964260593172480'
+  - :name: hbd-aikyan
+    :target: 1540306800
+    :end_name: seiyuu
+    :start: 1540220400
+    :countdown_name: hbd-aikyan-2018
+- - '143964260593172480'
+  - :name: hbd-suwawa
+    :target: 1541170800
+    :end_name: seiyuu
+    :start: 1541084400
+    :countdown_name: hbd-suwawa-2018
+- - '143382005990555648'
+  - :name: hbd-hanayo
+    :target: 1516201200
+    :end_name: muse
+    :start: 1516114800
+    :countdown_name: hbd-hanayo-2018
+- - '143382005990555648'
+  - :name: hbd-umi
+    :target: 1521126000
+    :end_name: muse
+    :start: 1521039600
+    :countdown_name: hbd-umi-2018
+- - '143382005990555648'
+  - :name: hbd-maki
+    :target: 1524150000
+    :end_name: muse
+    :start: 1524063600
+    :countdown_name: hbd-maki-2018
+- - '143382005990555648'
+  - :name: hbd-nozomi
+    :target: 1528556400
+    :end_name: muse
+    :start: 1528470000
+    :countdown_name: hbd-nozomi-2018
+- - '143382005990555648'
+  - :name: hbd-nico
+    :target: 1532271600
+    :end_name: muse
+    :start: 1532185200
+    :countdown_name: hbd-nico-2018
+- - '143382005990555648'
+  - :name: hbd-honoka
+    :target: 1533308400
+    :end_name: muse
+    :start: 1533222000
+    :countdown_name: hbd-honoka-2018
+- - '143382005990555648'
+  - :name: hbd-kotori
+    :target: 1536764400
+    :end_name: muse
+    :start: 1536678000
+    :countdown_name: hbd-kotori-2018
+- - '143382005990555648'
+  - :name: hbd-eli
+    :target: 1540134000
+    :end_name: muse
+    :start: 1540047600
+    :countdown_name: hbd-eli-2018
+- - '143382005990555648'
+  - :name: hbd-rin
+    :target: 1541084400
+    :end_name: muse
+    :start: 1540998000
+    :countdown_name: hbd-rin-2018
+- - '137595269633146880'
+  - :name: hbd-dia
+    :target: 1514818800
+    :end_name: aqours
+    :start: 1514732400
+    :countdown_name: hbd-dia-2018
+- - '137595269633146880'
+  - :name: hbd-kanan
+    :target: 1518274800
+    :end_name: aqours
+    :start: 1518188400
+    :countdown_name: hbd-kanan-2018
+- - '137595269633146880'
+  - :name: hbd-zuramaru
+    :target: 1520175600
+    :end_name: aqours
+    :start: 1520089200
+    :countdown_name: hbd-zuramaru-2018
+- - '137595269633146880'
+  - :name: hbd-you
+    :target: 1523977200
+    :end_name: aqours
+    :start: 1523890800
+    :countdown_name: hbd-you-2018
+- - '137595269633146880'
+  - :name: hbd-mari
+    :target: 1528902000
+    :end_name: aqours
+    :start: 1528815600
+    :countdown_name: hbd-mari-2018
+- - '137595269633146880'
+  - :name: hbd-yohane
+    :target: 1531494000
+    :end_name: aqours
+    :start: 1531407600
+    :countdown_name: hbd-yohane-2018
+- - '137595269633146880'
+  - :name: hbd-chika
+    :target: 1533135600
+    :end_name: aqours
+    :start: 1533049200
+    :countdown_name: hbd-chika-2018
+- - '137595269633146880'
+  - :name: hbd-riko
+    :target: 1537369200
+    :end_name: aqours
+    :start: 1537282800
+    :countdown_name: hbd-riko-2018
+- - '137595269633146880'
+  - :name: hbd-ruby
+    :target: 1537542000
+    :end_name: aqours
+    :start: 1537455600
+    :countdown_name: hbd-ruby-2018
+- - '143964260593172480'
+  - :name: hbd-miyutan
+    :target: 1517410800
+    :end_name: seiyuu
+    :start: 1517324400
+    :countdown_name: hbd-miyutan-2018
+- - '143964260593172480'
+  - :name: hbd-mayu
+    :target: 1523977200
+    :end_name: seiyuu
+    :start: 1523890800
+    :countdown_name: hbd-mayu-2018
+- - '143964260593172480'
+  - :name: hbd-kaorin
+    :target: 1524668400
+    :end_name: seiyuu
+    :start: 1524582000
+    :countdown_name: hbd-kaorin-2018
+- - '143964260593172480'
+  - :name: hbd-agumeshon
+    :target: 1525273200
+    :end_name: seiyuu
+    :start: 1525186800
+    :countdown_name: hbd-agumeshon-2018
+- - '143964260593172480'
+  - :name: hbd-nacchan
+    :target: 1536332400
+    :end_name: seiyuu
+    :start: 1536246000
+    :countdown_name: hbd-nacchan-2018
+- - '143964260593172480'
+  - :name: hbd-maria
+    :target: 1537455600
+    :end_name: seiyuu
+    :start: 1537369200
+    :countdown_name: hbd-maria-2018
+- - '143964260593172480'
+  - :name: hbd-chiemi
+    :target: 1538838000
+    :end_name: seiyuu
+    :start: 1538751600
+    :countdown_name: hbd-chiemi-2018
+- - '143964260593172480'
+  - :name: hbd-akari
+    :target: 1539702000
+    :end_name: seiyuu
+    :start: 1539615600
+    :countdown_name: hbd-akari-2018
+- - '143964260593172480'
+  - :name: hbd-tomori
+    :target: 1545490800
+    :end_name: seiyuu
+    :start: 1545404400
+    :countdown_name: hbd-tomori-2018
+- - '314746494634950676'
+  - :name: hbd-kasukasu
+    :target: 1516719600
+    :end_name: perfect-dream-project
+    :start: 1516633200
+    :countdown_name: hbd-kasukasu-2018
+- - '314746494634950676'
+  - :name: hbd-emma
+    :target: 1517842800
+    :end_name: perfect-dream-project
+    :start: 1517756400
+    :countdown_name: hbd-emma-2018
+- - '314746494634950676'
+  - :name: hbd-ayumu
+    :target: 1519916400
+    :end_name: perfect-dream-project
+    :start: 1519830000
+    :countdown_name: hbd-ayumu-2018
+- - '314746494634950676'
+  - :name: hbd-shizuku
+    :target: 1522767600
+    :end_name: perfect-dream-project
+    :start: 1522681200
+    :countdown_name: hbd-shizuku-2018
+- - '314746494634950676'
+  - :name: hbd-ai
+    :target: 1527692400
+    :end_name: perfect-dream-project
+    :start: 1527606000
+    :countdown_name: hbd-ai-2018
+- - '314746494634950676'
+  - :name: hbd-karin
+    :target: 1530284400
+    :end_name: perfect-dream-project
+    :start: 1530198000
+    :countdown_name: hbd-karin-2018
+- - '314746494634950676'
+  - :name: hbd-setsuna
+    :target: 1533740400
+    :end_name: perfect-dream-project
+    :start: 1533654000
+    :countdown_name: hbd-setsuna-2018
+- - '314746494634950676'
+  - :name: hbd-rina
+    :target: 1542121200
+    :end_name: perfect-dream-project
+    :start: 1542034800
+    :countdown_name: hbd-rina-2018
+- - '314746494634950676'
+  - :name: hbd-kanata
+    :target: 1544972400
+    :end_name: perfect-dream-project
+    :start: 1544886000
+    :countdown_name: hbd-kanata-2018
+- - '143964260593172480'
+  - :name: hbd-kussun
+    :target: 1549033200
+    :end_name: seiyuu
+    :start: 1548946800
+    :countdown_name: hbd-kussun-2019
+- - '143964260593172480'
+  - :name: hbd-pile
+    :target: 1556809200
+    :end_name: seiyuu
+    :start: 1556722800
+    :countdown_name: hbd-pile-2019
+- - '143964260593172480'
+  - :name: hbd-shikaco
+    :target: 1558278000
+    :end_name: seiyuu
+    :start: 1558191600
+    :countdown_name: hbd-shikaco-2019
+- - '143964260593172480'
+  - :name: hbd-mimorin
+    :target: 1561734000
+    :end_name: seiyuu
+    :start: 1561647600
+    :countdown_name: hbd-mimorin-2019
+- - '143964260593172480'
+  - :name: hbd-nanjo
+    :target: 1562943600
+    :end_name: seiyuu
+    :start: 1562857200
+    :countdown_name: hbd-nanjo-2019
+- - '143964260593172480'
+  - :name: hbd-ucchi-and-ainya
+    :target: 1563894000
+    :end_name: seiyuu
+    :start: 1563807600
+    :countdown_name: hbd-ucchi-and-ainya-2019
+- - '143964260593172480'
+  - :name: hbd-rippi
+    :target: 1572102000
+    :end_name: seiyuu
+    :start: 1572015600
+    :countdown_name: hbd-rippi-2019
+- - '143964260593172480'
+  - :name: hbd-emitsun
+    :target: 1575990000
+    :end_name: seiyuu
+    :start: 1575903600
+    :countdown_name: hbd-emitsun-2019
+- - '143964260593172480'
+  - :name: hbd-soramaru
+    :target: 1577372400
+    :end_name: seiyuu
+    :start: 1577286000
+    :countdown_name: hbd-soramaru-2019
+- - '143964260593172480'
+  - :name: hbd-arisha
+    :target: 1549378800
+    :end_name: seiyuu
+    :start: 1549292400
+    :countdown_name: hbd-arisha-2019
+- - '143964260593172480'
+  - :name: hbd-anchan
+    :target: 1549551600
+    :end_name: seiyuu
+    :start: 1549465200
+    :countdown_name: hbd-anchan-2019
+- - '143964260593172480'
+  - :name: hbd-aiai
+    :target: 1550588400
+    :end_name: seiyuu
+    :start: 1550502000
+    :countdown_name: hbd-aiai-2019
+- - '143964260593172480'
+  - :name: hbd-rikyako
+    :target: 1565276400
+    :end_name: seiyuu
+    :start: 1565190000
+    :countdown_name: hbd-rikyako-2019
+- - '143964260593172480'
+  - :name: hbd-shuka
+    :target: 1565967600
+    :end_name: seiyuu
+    :start: 1565881200
+    :countdown_name: hbd-shuka-2019
+- - '143964260593172480'
+  - :name: hbd-king
+    :target: 1569423600
+    :end_name: seiyuu
+    :start: 1569337200
+    :countdown_name: hbd-king-2019
+- - '143964260593172480'
+  - :name: hbd-aikyan
+    :target: 1571842800
+    :end_name: seiyuu
+    :start: 1571756400
+    :countdown_name: hbd-aikyan-2019
+- - '143964260593172480'
+  - :name: hbd-suwawa
+    :target: 1572706800
+    :end_name: seiyuu
+    :start: 1572620400
+    :countdown_name: hbd-suwawa-2019
+- - '143382005990555648'
+  - :name: hbd-hanayo
+    :target: 1547737200
+    :end_name: muse
+    :start: 1547650800
+    :countdown_name: hbd-hanayo-2019
+- - '143382005990555648'
+  - :name: hbd-umi
+    :target: 1552662000
+    :end_name: muse
+    :start: 1552575600
+    :countdown_name: hbd-umi-2019
+- - '143382005990555648'
+  - :name: hbd-maki
+    :target: 1555686000
+    :end_name: muse
+    :start: 1555599600
+    :countdown_name: hbd-maki-2019
+- - '143382005990555648'
+  - :name: hbd-nozomi
+    :target: 1560092400
+    :end_name: muse
+    :start: 1560006000
+    :countdown_name: hbd-nozomi-2019
+- - '143382005990555648'
+  - :name: hbd-nico
+    :target: 1563807600
+    :end_name: muse
+    :start: 1563721200
+    :countdown_name: hbd-nico-2019
+- - '143382005990555648'
+  - :name: hbd-honoka
+    :target: 1564844400
+    :end_name: muse
+    :start: 1564758000
+    :countdown_name: hbd-honoka-2019
+- - '143382005990555648'
+  - :name: hbd-kotori
+    :target: 1568300400
+    :end_name: muse
+    :start: 1568214000
+    :countdown_name: hbd-kotori-2019
+- - '143382005990555648'
+  - :name: hbd-eli
+    :target: 1571670000
+    :end_name: muse
+    :start: 1571583600
+    :countdown_name: hbd-eli-2019
+- - '143382005990555648'
+  - :name: hbd-rin
+    :target: 1572620400
+    :end_name: muse
+    :start: 1572534000
+    :countdown_name: hbd-rin-2019
+- - '137595269633146880'
+  - :name: hbd-dia
+    :target: 1546354800
+    :end_name: aqours
+    :start: 1546268400
+    :countdown_name: hbd-dia-2019
+- - '137595269633146880'
+  - :name: hbd-kanan
+    :target: 1549810800
+    :end_name: aqours
+    :start: 1549724400
+    :countdown_name: hbd-kanan-2019
+- - '137595269633146880'
+  - :name: hbd-zuramaru
+    :target: 1551711600
+    :end_name: aqours
+    :start: 1551625200
+    :countdown_name: hbd-zuramaru-2019
+- - '137595269633146880'
+  - :name: hbd-you
+    :target: 1555513200
+    :end_name: aqours
+    :start: 1555426800
+    :countdown_name: hbd-you-2019
+- - '137595269633146880'
+  - :name: hbd-mari
+    :target: 1560438000
+    :end_name: aqours
+    :start: 1560351600
+    :countdown_name: hbd-mari-2019
+- - '137595269633146880'
+  - :name: hbd-yohane
+    :target: 1563030000
+    :end_name: aqours
+    :start: 1562943600
+    :countdown_name: hbd-yohane-2019
+- - '137595269633146880'
+  - :name: hbd-chika
+    :target: 1564671600
+    :end_name: aqours
+    :start: 1564585200
+    :countdown_name: hbd-chika-2019
+- - '137595269633146880'
+  - :name: hbd-riko
+    :target: 1568905200
+    :end_name: aqours
+    :start: 1568818800
+    :countdown_name: hbd-riko-2019
+- - '137595269633146880'
+  - :name: hbd-ruby
+    :target: 1569078000
+    :end_name: aqours
+    :start: 1568991600
+    :countdown_name: hbd-ruby-2019
+- - '143964260593172480'
+  - :name: hbd-miyutan
+    :target: 1548946800
+    :end_name: seiyuu
+    :start: 1548860400
+    :countdown_name: hbd-miyutan-2019
+- - '143964260593172480'
+  - :name: hbd-mayu
+    :target: 1555513200
+    :end_name: seiyuu
+    :start: 1555426800
+    :countdown_name: hbd-mayu-2019
+- - '143964260593172480'
+  - :name: hbd-kaorin
+    :target: 1556204400
+    :end_name: seiyuu
+    :start: 1556118000
+    :countdown_name: hbd-kaorin-2019
+- - '143964260593172480'
+  - :name: hbd-agumeshon
+    :target: 1556809200
+    :end_name: seiyuu
+    :start: 1556722800
+    :countdown_name: hbd-agumeshon-2019
+- - '143964260593172480'
+  - :name: hbd-nacchan
+    :target: 1567868400
+    :end_name: seiyuu
+    :start: 1567782000
+    :countdown_name: hbd-nacchan-2019
+- - '143964260593172480'
+  - :name: hbd-maria
+    :target: 1568991600
+    :end_name: seiyuu
+    :start: 1568905200
+    :countdown_name: hbd-maria-2019
+- - '143964260593172480'
+  - :name: hbd-chiemi
+    :target: 1570374000
+    :end_name: seiyuu
+    :start: 1570287600
+    :countdown_name: hbd-chiemi-2019
+- - '143964260593172480'
+  - :name: hbd-akari
+    :target: 1571238000
+    :end_name: seiyuu
+    :start: 1571151600
+    :countdown_name: hbd-akari-2019
+- - '143964260593172480'
+  - :name: hbd-tomori
+    :target: 1577026800
+    :end_name: seiyuu
+    :start: 1576940400
+    :countdown_name: hbd-tomori-2019
+- - '314746494634950676'
+  - :name: hbd-kasukasu
+    :target: 1548255600
+    :end_name: perfect-dream-project
+    :start: 1548169200
+    :countdown_name: hbd-kasukasu-2019
+- - '314746494634950676'
+  - :name: hbd-emma
+    :target: 1549378800
+    :end_name: perfect-dream-project
+    :start: 1549292400
+    :countdown_name: hbd-emma-2019
+- - '314746494634950676'
+  - :name: hbd-ayumu
+    :target: 1551452400
+    :end_name: perfect-dream-project
+    :start: 1551366000
+    :countdown_name: hbd-ayumu-2019
+- - '314746494634950676'
+  - :name: hbd-shizuku
+    :target: 1554303600
+    :end_name: perfect-dream-project
+    :start: 1554217200
+    :countdown_name: hbd-shizuku-2019
+- - '314746494634950676'
+  - :name: hbd-ai
+    :target: 1559228400
+    :end_name: perfect-dream-project
+    :start: 1559142000
+    :countdown_name: hbd-ai-2019
+- - '314746494634950676'
+  - :name: hbd-karin
+    :target: 1561820400
+    :end_name: perfect-dream-project
+    :start: 1561734000
+    :countdown_name: hbd-karin-2019
+- - '314746494634950676'
+  - :name: hbd-setsuna
+    :target: 1565276400
+    :end_name: perfect-dream-project
+    :start: 1565190000
+    :countdown_name: hbd-setsuna-2019
+- - '314746494634950676'
+  - :name: hbd-rina
+    :target: 1573657200
+    :end_name: perfect-dream-project
+    :start: 1573570800
+    :countdown_name: hbd-rina-2019
+- - '314746494634950676'
+  - :name: hbd-kanata
+    :target: 1576508400
+    :end_name: perfect-dream-project
+    :start: 1576422000
+    :countdown_name: hbd-kanata-2019
+- - '143964260593172480'
+  - :name: hbd-kussun
+    :target: 1580569200
+    :end_name: seiyuu
+    :start: 1580482800
+    :countdown_name: hbd-kussun-2020
+- - '143964260593172480'
+  - :name: hbd-pile
+    :target: 1588431600
+    :end_name: seiyuu
+    :start: 1588345200
+    :countdown_name: hbd-pile-2020
+- - '143964260593172480'
+  - :name: hbd-shikaco
+    :target: 1589900400
+    :end_name: seiyuu
+    :start: 1589814000
+    :countdown_name: hbd-shikaco-2020
+- - '143964260593172480'
+  - :name: hbd-mimorin
+    :target: 1593356400
+    :end_name: seiyuu
+    :start: 1593270000
+    :countdown_name: hbd-mimorin-2020
+- - '143964260593172480'
+  - :name: hbd-nanjo
+    :target: 1594566000
+    :end_name: seiyuu
+    :start: 1594479600
+    :countdown_name: hbd-nanjo-2020
+- - '143964260593172480'
+  - :name: hbd-ucchi-and-ainya
+    :target: 1595516400
+    :end_name: seiyuu
+    :start: 1595430000
+    :countdown_name: hbd-ucchi-and-ainya-2020
+- - '143964260593172480'
+  - :name: hbd-rippi
+    :target: 1603724400
+    :end_name: seiyuu
+    :start: 1603638000
+    :countdown_name: hbd-rippi-2020
+- - '143964260593172480'
+  - :name: hbd-emitsun
+    :target: 1607612400
+    :end_name: seiyuu
+    :start: 1607526000
+    :countdown_name: hbd-emitsun-2020
+- - '143964260593172480'
+  - :name: hbd-soramaru
+    :target: 1608994800
+    :end_name: seiyuu
+    :start: 1608908400
+    :countdown_name: hbd-soramaru-2020
+- - '143964260593172480'
+  - :name: hbd-arisha
+    :target: 1580914800
+    :end_name: seiyuu
+    :start: 1580828400
+    :countdown_name: hbd-arisha-2020
+- - '143964260593172480'
+  - :name: hbd-anchan
+    :target: 1581087600
+    :end_name: seiyuu
+    :start: 1581001200
+    :countdown_name: hbd-anchan-2020
+- - '143964260593172480'
+  - :name: hbd-aiai
+    :target: 1582124400
+    :end_name: seiyuu
+    :start: 1582038000
+    :countdown_name: hbd-aiai-2020
+- - '143964260593172480'
+  - :name: hbd-rikyako
+    :target: 1596898800
+    :end_name: seiyuu
+    :start: 1596812400
+    :countdown_name: hbd-rikyako-2020
+- - '143964260593172480'
+  - :name: hbd-shuka
+    :target: 1597590000
+    :end_name: seiyuu
+    :start: 1597503600
+    :countdown_name: hbd-shuka-2020
+- - '143964260593172480'
+  - :name: hbd-king
+    :target: 1601046000
+    :end_name: seiyuu
+    :start: 1600959600
+    :countdown_name: hbd-king-2020
+- - '143964260593172480'
+  - :name: hbd-aikyan
+    :target: 1603465200
+    :end_name: seiyuu
+    :start: 1603378800
+    :countdown_name: hbd-aikyan-2020
+- - '143964260593172480'
+  - :name: hbd-suwawa
+    :target: 1604329200
+    :end_name: seiyuu
+    :start: 1604242800
+    :countdown_name: hbd-suwawa-2020
+- - '143382005990555648'
+  - :name: hbd-hanayo
+    :target: 1579273200
+    :end_name: muse
+    :start: 1579186800
+    :countdown_name: hbd-hanayo-2020
+- - '143382005990555648'
+  - :name: hbd-umi
+    :target: 1584284400
+    :end_name: muse
+    :start: 1584198000
+    :countdown_name: hbd-umi-2020
+- - '143382005990555648'
+  - :name: hbd-maki
+    :target: 1587308400
+    :end_name: muse
+    :start: 1587222000
+    :countdown_name: hbd-maki-2020
+- - '143382005990555648'
+  - :name: hbd-nozomi
+    :target: 1591714800
+    :end_name: muse
+    :start: 1591628400
+    :countdown_name: hbd-nozomi-2020
+- - '143382005990555648'
+  - :name: hbd-nico
+    :target: 1595430000
+    :end_name: muse
+    :start: 1595343600
+    :countdown_name: hbd-nico-2020
+- - '143382005990555648'
+  - :name: hbd-honoka
+    :target: 1596466800
+    :end_name: muse
+    :start: 1596380400
+    :countdown_name: hbd-honoka-2020
+- - '143382005990555648'
+  - :name: hbd-kotori
+    :target: 1599922800
+    :end_name: muse
+    :start: 1599836400
+    :countdown_name: hbd-kotori-2020
+- - '143382005990555648'
+  - :name: hbd-eli
+    :target: 1603292400
+    :end_name: muse
+    :start: 1603206000
+    :countdown_name: hbd-eli-2020
+- - '143382005990555648'
+  - :name: hbd-rin
+    :target: 1604242800
+    :end_name: muse
+    :start: 1604156400
+    :countdown_name: hbd-rin-2020
+- - '137595269633146880'
+  - :name: hbd-dia
+    :target: 1577890800
+    :end_name: aqours
+    :start: 1577804400
+    :countdown_name: hbd-dia-2020
+- - '137595269633146880'
+  - :name: hbd-kanan
+    :target: 1581346800
+    :end_name: aqours
+    :start: 1581260400
+    :countdown_name: hbd-kanan-2020
+- - '137595269633146880'
+  - :name: hbd-zuramaru
+    :target: 1583334000
+    :end_name: aqours
+    :start: 1583247600
+    :countdown_name: hbd-zuramaru-2020
+- - '137595269633146880'
+  - :name: hbd-you
+    :target: 1587135600
+    :end_name: aqours
+    :start: 1587049200
+    :countdown_name: hbd-you-2020
+- - '137595269633146880'
+  - :name: hbd-mari
+    :target: 1592060400
+    :end_name: aqours
+    :start: 1591974000
+    :countdown_name: hbd-mari-2020
+- - '137595269633146880'
+  - :name: hbd-yohane
+    :target: 1594652400
+    :end_name: aqours
+    :start: 1594566000
+    :countdown_name: hbd-yohane-2020
+- - '137595269633146880'
+  - :name: hbd-chika
+    :target: 1596294000
+    :end_name: aqours
+    :start: 1596207600
+    :countdown_name: hbd-chika-2020
+- - '137595269633146880'
+  - :name: hbd-riko
+    :target: 1600527600
+    :end_name: aqours
+    :start: 1600441200
+    :countdown_name: hbd-riko-2020
+- - '137595269633146880'
+  - :name: hbd-ruby
+    :target: 1600700400
+    :end_name: aqours
+    :start: 1600614000
+    :countdown_name: hbd-ruby-2020
+- - '143964260593172480'
+  - :name: hbd-miyutan
+    :target: 1580482800
+    :end_name: seiyuu
+    :start: 1580396400
+    :countdown_name: hbd-miyutan-2020
+- - '143964260593172480'
+  - :name: hbd-mayu
+    :target: 1587135600
+    :end_name: seiyuu
+    :start: 1587049200
+    :countdown_name: hbd-mayu-2020
+- - '143964260593172480'
+  - :name: hbd-kaorin
+    :target: 1587826800
+    :end_name: seiyuu
+    :start: 1587740400
+    :countdown_name: hbd-kaorin-2020
+- - '143964260593172480'
+  - :name: hbd-agumeshon
+    :target: 1588431600
+    :end_name: seiyuu
+    :start: 1588345200
+    :countdown_name: hbd-agumeshon-2020
+- - '143964260593172480'
+  - :name: hbd-nacchan
+    :target: 1599490800
+    :end_name: seiyuu
+    :start: 1599404400
+    :countdown_name: hbd-nacchan-2020
+- - '143964260593172480'
+  - :name: hbd-maria
+    :target: 1600614000
+    :end_name: seiyuu
+    :start: 1600527600
+    :countdown_name: hbd-maria-2020
+- - '143964260593172480'
+  - :name: hbd-chiemi
+    :target: 1601996400
+    :end_name: seiyuu
+    :start: 1601910000
+    :countdown_name: hbd-chiemi-2020
+- - '143964260593172480'
+  - :name: hbd-akari
+    :target: 1602860400
+    :end_name: seiyuu
+    :start: 1602774000
+    :countdown_name: hbd-akari-2020
+- - '143964260593172480'
+  - :name: hbd-tomori
+    :target: 1608649200
+    :end_name: seiyuu
+    :start: 1608562800
+    :countdown_name: hbd-tomori-2020
+- - '314746494634950676'
+  - :name: hbd-kasukasu
+    :target: 1579791600
+    :end_name: perfect-dream-project
+    :start: 1579705200
+    :countdown_name: hbd-kasukasu-2020
+- - '314746494634950676'
+  - :name: hbd-emma
+    :target: 1580914800
+    :end_name: perfect-dream-project
+    :start: 1580828400
+    :countdown_name: hbd-emma-2020
+- - '314746494634950676'
+  - :name: hbd-ayumu
+    :target: 1583074800
+    :end_name: perfect-dream-project
+    :start: 1582988400
+    :countdown_name: hbd-ayumu-2020
+- - '314746494634950676'
+  - :name: hbd-shizuku
+    :target: 1585926000
+    :end_name: perfect-dream-project
+    :start: 1585839600
+    :countdown_name: hbd-shizuku-2020
+- - '314746494634950676'
+  - :name: hbd-ai
+    :target: 1590850800
+    :end_name: perfect-dream-project
+    :start: 1590764400
+    :countdown_name: hbd-ai-2020
+- - '314746494634950676'
+  - :name: hbd-karin
+    :target: 1593442800
+    :end_name: perfect-dream-project
+    :start: 1593356400
+    :countdown_name: hbd-karin-2020
+- - '314746494634950676'
+  - :name: hbd-setsuna
+    :target: 1596898800
+    :end_name: perfect-dream-project
+    :start: 1596812400
+    :countdown_name: hbd-setsuna-2020
+- - '314746494634950676'
+  - :name: hbd-rina
+    :target: 1605279600
+    :end_name: perfect-dream-project
+    :start: 1605193200
+    :countdown_name: hbd-rina-2020
+- - '314746494634950676'
+  - :name: hbd-kanata
+    :target: 1608130800
+    :end_name: perfect-dream-project
+    :start: 1608044400
+    :countdown_name: hbd-kanata-2020
+- - '233867512763252736'
+  - :name: "{{time}}-until-saitama-d1-dekimasen"
+    :target: 1517630400
+    :end_name: dekimasen
+    :start: 0
+    :countdown_name: 
+- - '233867512763252736'
+  - :name: "{{time}}-until-saitama-d2-dekimasen"
+    :target: 1520654400
+    :end_name: dekimasen
+    :start: 1520175600
+    :countdown_name: 
+- - '233867512763252736'
+  - :name: "{{time}}-to-ballot-saitama-d2"
+    :target: 1520175599
+    :end_name: aqours-3rd-live
+    :start: 1517670000
+    :countdown_name: 

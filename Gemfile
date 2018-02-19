@@ -1,4 +1,5 @@
 source "https://rubygems.org"
 
-gem "discordrb"
+gem "discordrb", git: "https://github.com/meew0/discordrb"
 gem "rbnacl"
+gem "activesupport"

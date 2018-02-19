@@ -1,8 +1,9 @@
-::RBNACL_LIBSODIUM_GEM_LIB_PATH = "#{`pwd`.chomp}/libsodium.dll"  if ENV["_system_name"] == "Cygwin"
 require 'discordrb'
 require 'yaml'
 
-client_id = 311535055413575682
+client_id = ENV["CLIENT_ID"]
+client_token = ENV["CLIENT_TOKEN"]
+admin_list = ENV["ADMIN_LIST"]
 
 @bot = nil
 
@@ -10,20 +11,20 @@ client_id = 311535055413575682
 
 puts "https://discordapp.com/api/oauth2/authorize?client_id=#{client_id}&scope=bot&permissions=0"
 
-@admins = {
-  "137463281676713984" => true,
-  "122908555178147840" => true
-}
+@admins = admin_list.map{|x| [x,true]}.to_h
 
 def save_hash(c)
   File.write("countdowns", c.to_yaml)
 end
 
 running = true
-
 Signal.trap("INT") do
+  if running == false
+    exit(1)
+  end
   puts "Stopping..."
   running = false
+
 end
 
 @unconfirmed = {}
@@ -35,7 +36,7 @@ if File.exists?("countdowns")
 end
 
 def start_bot!(client_id)
-  @bot = Discordrb::Bot.new token: 'MzExNTM1MDU1NDEzNTc1Njgy.C_N7KQ.o7mh1DmD3Ouv9V3sbtFSfH9JaZs', client_id: client_id
+  @bot = Discordrb::Bot.new token: client_token, client_id: client_id
 
   @bot.message(contains: "tokobot del") do |event|
     if @admins.has_key?("#{event.user.id}")
@@ -156,7 +157,8 @@ To confirm say 'tokobot ok' otherwise 'tokobot cancel'
             end
           end
         rescue => e
-          event.respond("#{e.message}")
+          puts e
+          exit(1)
         end
       end
 
@@ -177,16 +179,17 @@ def ensure_bot!(client_id)
     connected = false
   end
 
+
   if !connected
-    puts "Bot not running. Starting up."
-    if !@bot
-      start_bot!(client_id)
+    begin
+      @bot.stop
+    rescue => e
     end
+    puts "Bot not running. Starting up."
+    start_bot!(client_id)
   end
 
 end
-
-#countdowns["311538191205138432"] = { name: "{{time}}-until-something-happens", target: Time.new(2017,5,10,1,55,0), end_name: "meow" }
 
 def make_pretty_string(amount, str)
   if amount == 1
@@ -199,8 +202,8 @@ end
 loop do
   ensure_bot!(client_id)
 
-  begin
-    @countdowns.each do |channel_id, info|
+  @countdowns.each do |channel_id, info|
+    begin
       chan = @bot.channel("#{channel_id}")
       if Time.now.to_i < info[:target] && info[:start] < Time.now.to_i
 
@@ -213,13 +216,13 @@ loop do
         hour = 60 * 60
         minute = 60
 
-        if difference > month
+        if difference > month * 2
           #months 
           prettystring = make_pretty_string((difference/month.to_f).ceil, "month")
-        elsif difference > week
+        #elsif difference > week
           #weeks
-          prettystring = make_pretty_string((difference/week.to_f).ceil, "week")
-        elsif difference > day
+          #prettystring = make_pretty_string((difference/week.to_f).ceil, "week")
+        elsif difference > day * 4
           #day
           prettystring = make_pretty_string((difference/day.to_f).ceil, "day")
         elsif difference > hour
@@ -232,14 +235,19 @@ loop do
 
         mmo = info[:name].sub("{{time}}", "#{prettystring}")
 
-        puts "#{difference} -> #{mmo}"
+        puts "(#{chan.id}) #{difference} -> #{mmo}"
+
         chan.name = info[:name].sub("{{time}}", "#{prettystring}")
+
+
       elsif info[:target] < Time.now.to_i && Time.now.to_i < info[:target] + 10
         puts "#{info[:end_name]}"
         chan.name = "#{info[:end_name]}"
       end
+    rescue => e
+      puts e
+      exit(1)
     end
-  rescue
   end
 
   sleep(0.5)
