@@ -39,8 +39,8 @@ end
 @countdowns = []
 
 if File.exists?("countdowns")
-  puts "Resuming existing countdowns"
   @countdowns = YAML.load_file('countdowns')
+  puts "Resuming existing countdowns #{@countdowns.count}"
 end
 
 def start_bot!(client_id)
@@ -248,10 +248,10 @@ loop do
         mmo = info[:name].sub("{{time}}", "#{prettystring}")
 
         new_chan_name = info[:name].sub("{{time}}", "#{prettystring}")
-        #if chan.name != new_chan_name || now.sec == 0
+        if chan.name != new_chan_name || now.sec == 0
           puts "(#{chan.id}) #{difference} M#{month_diff} D#{day_diff} -> #{mmo}"
           chan.name = new_chan_name
-        #end
+        end
 
 
       elsif info[:target] < now.to_i && now.to_i < info[:target] + 10
