@@ -136,9 +136,9 @@ def start_bot!(client_id)
             begin
               @unconfirmed["#{chan_id}"] = { 
                 name: name_pat, 
-                target: Time.new(year,month,day,hour,minute,seconds).to_i, 
+                target: Time.new(year,month,day,hour,minute,seconds,"+09:00").to_i, 
                 end_name: end_name, 
-                start: start_a ? Time.new(start_year,start_month,start_day,start_hour,start_minute,start_seconds).to_i : 0,
+                start: start_a ? Time.new(start_year,start_month,start_day,start_hour,start_minute,start_seconds,"+09:00").to_i : 0,
                 countdown_name: countdown_name
               }
 
@@ -245,14 +245,12 @@ loop do
           prettystring = make_pretty_string((difference/minute.to_f).ceil, "min")
         end
 
-        mmo = info[:name].sub("{{time}}", "#{prettystring}")
-
         new_chan_name = info[:name].sub("{{time}}", "#{prettystring}")
-        if chan.name != new_chan_name || now.sec == 0
-          puts "(#{chan.id}) #{difference} M#{month_diff} D#{day_diff} -> #{mmo}"
-          chan.name = new_chan_name
-        end
 
+        if chan.name != new_chan_name || now.sec == 0
+          puts "(#{chan.id}) #{difference} M#{month_diff} D#{day_diff} -> #{new_chan_name}"
+        end
+        chan.name = new_chan_name
 
       elsif info[:target] < now.to_i && now.to_i < info[:target] + 10
         puts "#{info[:end_name]}"
