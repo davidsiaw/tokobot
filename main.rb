@@ -1,9 +1,17 @@
 require 'discordrb'
 require 'yaml'
 
-client_id = ENV["CLIENT_ID"]
-client_token = ENV["CLIENT_TOKEN"]
-admin_list = ENV["ADMIN_LIST"]
+def client_id 
+  ENV["CLIENT_ID"]
+end
+
+def client_token
+  ENV["CLIENT_TOKEN"]
+end
+
+def admin_list 
+  ENV["ADMIN_LIST"]
+end
 
 @bot = nil
 
@@ -11,7 +19,7 @@ admin_list = ENV["ADMIN_LIST"]
 
 puts "https://discordapp.com/api/oauth2/authorize?client_id=#{client_id}&scope=bot&permissions=0"
 
-@admins = admin_list.map{|x| [x,true]}.to_h
+@admins = admin_list.split(",").map{|x| [x,true]}.to_h
 
 def save_hash(c)
   File.write("countdowns", c.to_yaml)
@@ -202,12 +210,13 @@ end
 loop do
   ensure_bot!(client_id)
 
+  now = Time.now
   @countdowns.each do |channel_id, info|
     begin
       chan = @bot.channel("#{channel_id}")
-      if Time.now.to_i < info[:target] && info[:start] < Time.now.to_i
+      if now.to_i < info[:target] && info[:start] < now.to_i
 
-        difference = info[:target] - Time.now.to_i
+        difference = info[:target] - now.to_i
         prettystring = "#{difference}s"
 
         month = 60 * 60 * 24 * 30
@@ -216,15 +225,15 @@ loop do
         hour = 60 * 60
         minute = 60
 
-        if difference > month * 2
+        month_diff = (Time.at(info[:target]).year * 12 + Time.at(info[:target]).month) - (now.year * 12 + now.month)
+        day_diff = (Time.at(info[:target]).to_date - now.to_date).to_i
+
+        if month_diff > 1
           #months 
-          prettystring = make_pretty_string((difference/month.to_f).ceil, "month")
-        #elsif difference > week
-          #weeks
-          #prettystring = make_pretty_string((difference/week.to_f).ceil, "week")
-        elsif difference > day * 4
+          prettystring = make_pretty_string(month_diff, "month")
+        elsif day_diff > 3
           #day
-          prettystring = make_pretty_string((difference/day.to_f).ceil, "day")
+          prettystring = make_pretty_string(day_diff, "day")
         elsif difference > hour
           #hours
           prettystring = make_pretty_string((difference/hour.to_f).ceil, "hr")
@@ -235,12 +244,14 @@ loop do
 
         mmo = info[:name].sub("{{time}}", "#{prettystring}")
 
-        puts "(#{chan.id}) #{difference} -> #{mmo}"
+        new_chan_name = info[:name].sub("{{time}}", "#{prettystring}")
+        if chan.name != new_chan_name || now.sec == 0
+          puts "(#{chan.id}) #{difference} M#{month_diff} D#{day_diff} -> #{mmo}"
+          chan.name = new_chan_name
+        end
 
-        chan.name = info[:name].sub("{{time}}", "#{prettystring}")
 
-
-      elsif info[:target] < Time.now.to_i && Time.now.to_i < info[:target] + 10
+      elsif info[:target] < now.to_i && now.to_i < info[:target] + 10
         puts "#{info[:end_name]}"
         chan.name = "#{info[:end_name]}"
       end
