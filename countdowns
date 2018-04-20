@@ -954,20 +954,14 @@
     :start: 1608044400
     :countdown_name: hbd-kanata-2020
 - - '233867512763252736'
-  - :name: "{{time}}-until-saitama-d1-dekimasen"
-    :target: 1517630400
-    :end_name: dekimasen
+  - :name: "{{time}}-to-hakodate-d1"
+    :target: 1524819600
+    :end_name: hakodate-subunit-carnival-day-1
     :start: 0
-    :countdown_name: 
+    :countdown_name:
 - - '233867512763252736'
-  - :name: "{{time}}-until-saitama-d2-dekimasen"
-    :target: 1520654400
-    :end_name: dekimasen
-    :start: 1520175600
-    :countdown_name: 
-- - '233867512763252736'
-  - :name: "{{time}}-to-ballot-saitama-d2"
-    :target: 1520175599
-    :end_name: aqours-3rd-live
-    :start: 1517670000
-    :countdown_name: 
+  - :name: "{{time}}-to-hakodate-d2"
+    :target: 1524888000
+    :end_name: hakodate-subunit-carnival-day-2
+    :start: 1524837600
+    :countdown_name: hkd2
