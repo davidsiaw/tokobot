@@ -6,7 +6,7 @@
     :start: 1517410800
     :countdown_name: hbd-kussun-2018
 - - '143964260593172480'
-  - :name: hbd-pile
+  - :name: hbd-pile-and-agupon
     :target: 1525273200
     :end_name: seiyuu
     :start: 1525186800
@@ -228,12 +228,6 @@
     :start: 1524582000
     :countdown_name: hbd-kaorin-2018
 - - '143964260593172480'
-  - :name: hbd-agumeshon
-    :target: 1525273200
-    :end_name: seiyuu
-    :start: 1525186800
-    :countdown_name: hbd-agumeshon-2018
-- - '143964260593172480'
   - :name: hbd-nacchan
     :target: 1536332400
     :end_name: seiyuu
@@ -324,7 +318,7 @@
     :start: 1548946800
     :countdown_name: hbd-kussun-2019
 - - '143964260593172480'
-  - :name: hbd-pile
+  - :name: hbd-pile-and-agupon
     :target: 1556809200
     :end_name: seiyuu
     :start: 1556722800
@@ -546,12 +540,6 @@
     :start: 1556118000
     :countdown_name: hbd-kaorin-2019
 - - '143964260593172480'
-  - :name: hbd-agumeshon
-    :target: 1556809200
-    :end_name: seiyuu
-    :start: 1556722800
-    :countdown_name: hbd-agumeshon-2019
-- - '143964260593172480'
   - :name: hbd-nacchan
     :target: 1567868400
     :end_name: seiyuu
@@ -642,7 +630,7 @@
     :start: 1580482800
     :countdown_name: hbd-kussun-2020
 - - '143964260593172480'
-  - :name: hbd-pile
+  - :name: hbd-pile-and-agupon
     :target: 1588431600
     :end_name: seiyuu
     :start: 1588345200
@@ -863,12 +851,6 @@
     :end_name: seiyuu
     :start: 1587740400
     :countdown_name: hbd-kaorin-2020
-- - '143964260593172480'
-  - :name: hbd-agumeshon
-    :target: 1588431600
-    :end_name: seiyuu
-    :start: 1588345200
-    :countdown_name: hbd-agumeshon-2020
 - - '143964260593172480'
   - :name: hbd-nacchan
     :target: 1599490800
