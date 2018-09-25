@@ -256,6 +256,8 @@ loop do
         puts "#{info[:end_name]}"
         chan.name = "#{info[:end_name]}"
       end
+    rescue Discordrb::Errors::NoPermission => e
+      puts e
     rescue => e
       puts e
       exit(1)
