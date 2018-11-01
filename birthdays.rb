@@ -3,7 +3,7 @@ require "active_support/duration"
 
 orignames = {
 	143964260593172480 => "seiyuu",
-	143382005990555648 => "muse",
+	143382005990555648 => "muse-µs",
 	137595269633146880 => "aqours",
 	314746494634950676 => "nijigasaki-school-idol-club"
 }
